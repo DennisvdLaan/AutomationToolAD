@@ -1,0 +1,5 @@
+domain: "dennis.local"
+username: "testuser33"
+password: "Test123123123!"
+dc_ip: "192.168.101.7"
+use_ssl: false

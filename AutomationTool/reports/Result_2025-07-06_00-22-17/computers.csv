@@ -1,0 +1,7 @@
+Type,Name,OperatingSystem,LastLogon,Description
+Computer,Impacket,v0.12.0,-,Copyright
+Computer,[*],Querying,192.168.101.7,for
+Computer,SAM,AcctName,DNS,Hostname
+Computer,---------------,-----------------------------------,---------------,--------------------
+Computer,WINDOWSSERVER20$,WindowsServer20.dennis.local,10.0,(17763)
+Computer,DENNISWINDOWSVM$,denniswindowsvm.dennis.local,10.0,(26100)

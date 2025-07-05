@@ -25,7 +25,7 @@ def run(ad):
         # subprocess run zonder dat output naar terminal gaat
         result = subprocess.run(command, capture_output=True, text=True, check=True)
         output = result.stdout
-        logger.info("User enumeration succesvol uitgevoerd")
+        logger.info("User Enumeration Completed")
 
         users_list = []
 
@@ -47,5 +47,5 @@ def run(ad):
         return users_list
 
     except subprocess.CalledProcessError as e:
-        logger.error(f"Fout bij uitvoeren van GetADUsers.py: {e.stderr.strip()}")
+        logger.error(f"Error executing GetADUsers.py: {e.stderr.strip()}")
         return []

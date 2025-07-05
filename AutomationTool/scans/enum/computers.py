@@ -23,7 +23,7 @@ def run(ad):
     try:
         result = subprocess.run(command, capture_output=True, text=True, check=True)
         output = result.stdout
-        logger.info("Computer enumeration succesvol uitgevoerd")
+        logger.info("Computer Enumeration Completed")
 
         computers_list = []
 
@@ -45,5 +45,5 @@ def run(ad):
         return computers_list
 
     except subprocess.CalledProcessError as e:
-        logger.error(f"Fout bij uitvoeren van GetADComputers.py: {e.stderr.strip()}")
+        logger.error(f"Error executing GetADComputers.py: {e.stderr.strip()}")
         return []

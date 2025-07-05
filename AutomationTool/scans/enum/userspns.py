@@ -24,7 +24,7 @@ def run(ad):
         # subprocess run zonder dat output naar terminal gaat
         result = subprocess.run(command, capture_output=True, text=True, check=True)
         output = result.stdout
-        logger.info("SPNs enumeratie succesvol uitgevoerd")
+        logger.info("SPN Enumeration Completed")
 
         userspns_list = []
 
@@ -46,5 +46,5 @@ def run(ad):
         return userspns_list
 
     except subprocess.CalledProcessError as e:
-        logger.error(f"Fout bij uitvoeren van GetUserSPNs.py: {e.stderr.strip()}")
+        logger.error(f"Error executing GetUserSPNs.py: {e.stderr.strip()}")
         return []

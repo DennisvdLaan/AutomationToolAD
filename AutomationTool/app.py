@@ -1,71 +1,82 @@
-# main.py
-
 import argparse
 import yaml
 import os
 import sys
+from datetime import datetime
 from main.logger import setup_logger
 from main.ad_connector import ADConnector
-from main.task_manager import TaskManager
-from main.powershell_executor import run_powershell_script
-from scans.enum import users
-#from utils.helpers import save_report
+from scans.enum import users, computers, userspns
+from utils.helpers import save_report, save_dict_list_to_csv
 
-# ───────────────────────────────────────────────────────────────────────────────
 def load_config():
     try:
         with open("config/settings.yaml", "r") as f:
             return yaml.safe_load(f)
     except FileNotFoundError:
-        print("❌ Configuratiebestand niet gevonden: config/settings.yaml")
+        print("Configuratiebestand niet gevonden: config/settings.yaml")
         sys.exit(1)
 
-# ───────────────────────────────────────────────────────────────────────────────
 def parse_args():
     parser = argparse.ArgumentParser(description="AD Pentest Automation Tool")
     parser.add_argument("--mode", choices=["enum", "vuln", "exploit", "full"], default="full", help="Welke tests wil je uitvoeren?")
-    parser.add_argument("--output", default="reports/report.json", help="Pad naar output rapport")
     return parser.parse_args()
 
-# ───────────────────────────────────────────────────────────────────────────────
 def main():
     args = parse_args()
     config = load_config()
     logger = setup_logger("ad_pentest.log")
     logger.info("Programma gestart")
 
-    # Initialiseer verbinding met Active Directory
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    output_dir = os.path.join("reports", f"Result_{timestamp}")
+    os.makedirs(output_dir, exist_ok=True)
+
     ad = ADConnector(config)
     if not ad.connect():
         logger.error("Kan geen verbinding maken met Active Directory")
         sys.exit(1)
 
-    task_manager = TaskManager()
     results = {}
 
-    # ─── MODULE SELECTIE ───────────────────────────────────────────────────────
+    logger.info(f"Gekozen modus: {args.mode}")
+
     if args.mode in ["enum", "full"]:
-        logger.info("Pentestinstellingen: " + args.mode)
-#        results["domain_info"] = domain_info.run(ad)
-        results["users"] = users.run(ad)
-#        results["groups"] = groups.run(ad)
+        logger.info("Start Enumeration Module")
 
-#    if args.mode in ["vuln", "full"]:
-#        logger.info("🛡️ Start Kwetsbaarheidsanalyse")
-#        results["kerberoast"] = kerberoast.run(ad)
-#        results["asreproast"] = asreproast.run(ad)
+        users_results = users.run(ad)
+        results["users"] = users_results
+#        logger.info(f"Users results: {users_results}") # Debug messages
 
-#    if args.mode in ["exploit", "full"]:
-#        logger.info("💣 Start Exploit-pogingen (alleen PoC)")
-#        results["dc_sync"] = dc_sync.run(ad)
+        computers_results = computers.run(ad)
+        results["computers"] = computers_results
+#        logger.info(f"Computers results: {computers_results}") # Debug messages
 
-    # ─── RAPPORTAGE ───────────────────────────────────────────────────────────
-    #logger.info("📝 Rapport wordt gegenereerd")
- #   save_report(results, args.output)
+        userspns_results = userspns.run(ad)
+        results["userspns"] = userspns_results
+#        logger.info(f"UserSPNs results: {userspns_results}") # Debug message
+        save_dict_list_to_csv(users_results, os.path.join(output_dir, "users.csv"))
 
-    logger.info("Pentest voltooid.")
+        if computers_results and isinstance(computers_results, list) and len(computers_results) > 0:
+            save_dict_list_to_csv(computers_results, os.path.join(output_dir, "computers.csv"))
+
+        if userspns_results and isinstance(userspns_results, list) and len(userspns_results) > 0:
+            save_dict_list_to_csv(userspns_results, os.path.join(output_dir, "userspns.csv"))
+
+    if args.mode in ["vuln", "full"]:
+        logger.info("Start Kwetsbaarheidsanalyse")
+
+    if args.mode in ["exploit", "full"]:
+        logger.info("Start Exploit-pogingen")
+
+    if results:
+        json_report_path = os.path.join(output_dir, "report.json")
+        save_report(results, json_report_path)
+        logger.info(f"Rapport opgeslagen: {json_report_path}")
+    else:
+        logger.warning("Geen resultaten om op te slaan")
+
+    logger.info("Pentest voltooid")
     ad.disconnect()
 
-# ───────────────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     main()

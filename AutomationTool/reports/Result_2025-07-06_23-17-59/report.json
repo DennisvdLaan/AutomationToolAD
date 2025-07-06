@@ -33,7 +33,7 @@
             "Name": "admin",
             "Email": "2025-06-27",
             "PasswordLastSet": "10:05:21.859978",
-            "LastLogon": "2025-07-04"
+            "LastLogon": "2025-07-06"
         },
         {
             "Type": "User",
@@ -17491,7 +17491,7 @@
             "Name": "svc_printspool",
             "Email": "2025-07-02",
             "PasswordLastSet": "11:57:29.605913",
-            "LastLogon": "2025-07-04"
+            "LastLogon": "2025-07-06"
         },
         {
             "Type": "User",
@@ -17543,6 +17543,386 @@
             "OperatingSystem": "denniswindowsvm.dennis.local",
             "LastLogon": "10.0",
             "Description": "(26100)"
+        }
+    ],
+    "userspns": [
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "Impacket",
+            "Name": "v0.12.0",
+            "MemberOf": "-",
+            "PasswordLastSet": "Copyright"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "ServicePrincipalName",
+            "Name": "Name",
+            "MemberOf": "MemberOf",
+            "PasswordLastSet": "PasswordLastSet"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "-----------------------------",
+            "Name": "------------------",
+            "MemberOf": "-------------------------------------------------------------------------------",
+            "PasswordLastSet": "--------------------------"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "CIFS/ESMWDBAS1000000",
+            "Name": "LINDA_EVERETT",
+            "MemberOf": "2025-03-12",
+            "PasswordLastSet": "12:59:08.840509"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "CIFS/FSRWWEBS1000000",
+            "Name": "RANDY_BATTLE",
+            "MemberOf": "CN=LO-lei-distlist1,OU=HRE,OU=Stage,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "CIFS/GOOWLPT1000000",
+            "Name": "ROWENA_STARK",
+            "MemberOf": "CN=RI-chikipoki-admingroup1,OU=Groups,OU=FSR,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "CIFS/GOOWWEBS1000000",
+            "Name": "RICH_CHURCH",
+            "MemberOf": "CN=ME-alb-distlist1,OU=T1-Devices,OU=Tier",
+            "PasswordLastSet": "1,OU=Admin,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "CIFS/HREWAPPS1000000",
+            "Name": "FERN_GIBSON",
+            "MemberOf": "2025-03-12",
+            "PasswordLastSet": "13:03:50.501517"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "CIFS/OGCWSECS1000000",
+            "Name": "CELESTE_JENNINGS",
+            "MemberOf": "CN=HU-tk4-distlist1,OU=Test,OU=HRE,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "DummyServices/WindowsServer20",
+            "Name": "svc_printspool",
+            "MemberOf": "2025-07-02",
+            "PasswordLastSet": "11:57:29.605913"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "ftp/BDEWVIR1000000",
+            "Name": "GRACIE_VALENCIA",
+            "MemberOf": "CN=JU-ter-admingroup1,OU=Domain",
+            "PasswordLastSet": "Controllers,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "ftp/FINWAPPS1000001",
+            "Name": "7057405255SA",
+            "MemberOf": "CN=RA-1770392b8-distlist1,OU=Groups,OU=BDE,OU=Stage,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "ftp/FINWSECS1000000",
+            "Name": "TABITHA_BRADSHAW",
+            "MemberOf": "CN=BA-193675506-distlist1,OU=ITS,OU=Stage,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "ftp/FSRWVIR1000000",
+            "Name": "Admin2",
+            "MemberOf": "CN=Domain",
+            "PasswordLastSet": "Admins,CN=Users,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "ftp/HREWVIR1000000",
+            "Name": "KARLA_HUMPHREY",
+            "MemberOf": "CN=RA-sco-distlist1,OU=Devices,OU=FSR,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "ftp/ITSWLPT1000000",
+            "Name": "TINA_DUFFY",
+            "MemberOf": "CN=SU-NUmisMAti-distlist1,OU=AWS,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "ftp/OGCWWEBS1000001",
+            "Name": "AURORA_JUAREZ",
+            "MemberOf": "CN=SE-ner-admingroup1,OU=ServiceAccounts,OU=FSR,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "ftp/WINDOWSSERVER20",
+            "Name": "CORA_MCFADDEN",
+            "MemberOf": "CN=JE-pum-admingroup1,OU=Groups,OU=TST,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "https/BDEWWEBS1000000",
+            "Name": "DALTON_HANEY",
+            "MemberOf": "CN=CO-telenovel-distlist1,OU=Test,OU=FSR,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "https/ESMWVIR1000000",
+            "Name": "SHELLEY_FITZGERALD",
+            "MemberOf": "CN=JE-karenynan-distlist1,OU=Groups,OU=AWS,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "https/ESMWVIR1000001",
+            "Name": "LANNY_CAMPBELL",
+            "MemberOf": "CN=JE-aro-distlist1,OU=Devices,OU=HRE,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "https/ESMWWEBS1000000",
+            "Name": "LORI_BOOKER",
+            "MemberOf": "CN=PA-morenita1-distlist1,OU=Groups,OU=AWS,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "https/FSRWAPPS1000000",
+            "Name": "LULA_SPEARS",
+            "MemberOf": "CN=EL-507-distlist1,OU=Devices,OU=FSR,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "https/FSRWWKS1000000",
+            "Name": "NOEMI_RILEY",
+            "MemberOf": "CN=AN-bll-distlist1,OU=Devices,OU=FIN,OU=Stage,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "https/FSRWWKS1000001",
+            "Name": "TAMMY_ROTH",
+            "MemberOf": "CN=DR-29131715h-distlist1,OU=ITS,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "https/GOOWSECS1000000",
+            "Name": "ROBT_HARRINGTON",
+            "MemberOf": "2025-03-12",
+            "PasswordLastSet": "13:03:47.265511"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "https/HREWAPPS1000001",
+            "Name": "ASHLEY_SLATER",
+            "MemberOf": "CN=JO-411-admingroup1,OU=Test,OU=FSR,OU=Stage,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "https/HREWDBAS1000000",
+            "Name": "KATINA_FOX",
+            "MemberOf": "CN=CA-omar3bete-distlist1,OU=Test,OU=AWS,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "kafka/AWSWCTRX1000000",
+            "Name": "WILTON_TURNER",
+            "MemberOf": "CN=DA-800-admingroup1,OU=Groups,OU=ITS,OU=Stage,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "kafka/FINWAPPS1000000",
+            "Name": "BRANT_SALAZAR",
+            "MemberOf": "2025-03-12",
+            "PasswordLastSet": "12:58:33.372247"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "kafka/FINWVIR1000000",
+            "Name": "WILBUR_FLEMING",
+            "MemberOf": "CN=LE-teamooc02-distlist1,OU=FIN,OU=Stage,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "kafka/ITSWWEBS1000000",
+            "Name": "SALVADOR_HEATH",
+            "MemberOf": "CN=DO-6.96474E1-distlist1,OU=Devices,OU=OGC,OU=Stage,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/FINWAPPS1000001",
+            "Name": "HAL_BRIGHT",
+            "MemberOf": "CN=SO-260-distlist1,OU=Devices,OU=FSR,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/FINWVIR1000001",
+            "Name": "SARAH_KOCH",
+            "MemberOf": "CN=JA-ierou_sal-distlist1,OU=ServiceAccounts,OU=ITS,OU=Stage,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/GOOWCTRX1000000",
+            "Name": "ELEANOR_MILLER",
+            "MemberOf": "CN=AM-Gus-distlist1,OU=SEC,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/GOOWWKS1000000",
+            "Name": "LAVERNE_SNOW",
+            "MemberOf": "CN=KO-AMORETERN-distlist1,OU=TST,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/HREWAPPS1000000",
+            "Name": "EMORY_BELL",
+            "MemberOf": "2025-03-12",
+            "PasswordLastSet": "13:05:45.440401"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/HREWVIR1000000",
+            "Name": "BARNEY_BURNS",
+            "MemberOf": "CN=RA-1770392b8-distlist1,OU=Groups,OU=BDE,OU=Stage,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/OGCWAPPS1000000",
+            "Name": "HARRY_PRINCE",
+            "MemberOf": "CN=AU-nen-distlist1,OU=Groups,OU=SEC,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/OGCWWEBS1000000",
+            "Name": "KENYA_SHEPHERD",
+            "MemberOf": "CN=EF-dad-distlist1,OU=Grouper-Groups,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/SECWDBAS1000001",
+            "Name": "ELISA_WALTERS",
+            "MemberOf": "2025-03-12",
+            "PasswordLastSet": "13:04:00.216177"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/SECWLPT1000000",
+            "Name": "TOMMY_MCCALL",
+            "MemberOf": "CN=RA-sco-distlist1,OU=Devices,OU=FSR,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "MSSQL/TSTWSECS1000000",
+            "Name": "4672892808SA",
+            "MemberOf": "CN=EA-joe-admingroup1,OU=Test,OU=OGC,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/AWSWLPT1000000",
+            "Name": "CHANCE_HUNTER",
+            "MemberOf": "CN=AL-189182829-distlist1,OU=FSR,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/AZRWLPT1000000",
+            "Name": "JACLYN_COOKE",
+            "MemberOf": "CN=EL-fri-admingroup1,OU=ServiceAccounts,OU=FSR,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/BDEWWKS1000001",
+            "Name": "KRISTEN_POTTER",
+            "MemberOf": "CN=CO-telenovel-distlist1,OU=Test,OU=FSR,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/BDEWWKS1000003",
+            "Name": "OLIVER_HENDRICKS",
+            "MemberOf": "CN=SH-mibebe_oz-distlist1,OU=OGC,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/ESMWWKS1000000",
+            "Name": "PHIL_BUCK",
+            "MemberOf": "CN=RO-POL-distlist1,OU=ServiceAccounts,OU=ESM,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/FINWAPPS1000000",
+            "Name": "NICKOLAS_DILLARD",
+            "MemberOf": "CN=RA-sco-distlist1,OU=Devices,OU=FSR,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/FSRWWKS1000000",
+            "Name": "FABIAN_STEVENSON",
+            "MemberOf": "CN=48-119-distlist1,OU=Devices,OU=TST,OU=Tier",
+            "PasswordLastSet": "2,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/HREWAPPS1000000",
+            "Name": "JEWEL_LYONS",
+            "MemberOf": "2025-03-12",
+            "PasswordLastSet": "13:07:19.357185"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/TSTWCTRX1000000",
+            "Name": "BERTIE_ALEXANDER",
+            "MemberOf": "CN=LI-cha-distlist1,OU=Test,OU=OGC,OU=Tier",
+            "PasswordLastSet": "1,DC=dennis,DC=local"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/TSTWWEBS1000001",
+            "Name": "LAVONNE_DAUGHERTY",
+            "MemberOf": "CN=IIS_IUSRS,CN=Builtin,DC=dennis,DC=local",
+            "PasswordLastSet": "2025-03-12"
+        },
+        {
+            "Type": "SPN",
+            "ServicePrincipalName": "POP3/TSTWWEBS1000002",
+            "Name": "JOSEFA_LEVINE",
+            "MemberOf": "2025-03-12",
+            "PasswordLastSet": "13:37:34.238230"
         }
     ]
 }

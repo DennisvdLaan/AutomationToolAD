@@ -22,7 +22,6 @@ def run(ad):
     ]
 
     try:
-        # subprocess run zonder dat output naar terminal gaat
         result = subprocess.run(command, capture_output=True, text=True, check=True)
         output = result.stdout
         logger.info("User Enumeration Completed")
